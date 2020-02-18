@@ -17,4 +17,21 @@
             <tag>stable</tag>
         </tags>
     </update>
+    <update>
+        <name>NPEU: plg_bespokesearch</name>
+        <description>Joomla! plg_bespokesearch plugin</description>
+        <element>bespokesearch</element>
+        <type>plugin</type>
+        <folder>finder</folder>
+        <version>1.0.1</version>
+        <client>site</client>
+        <infourl title="NPEU: plg_bespokesearch">https://github.com/NPEU/plg_bespokesearch/releases/tag/v1.0.1</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/NPEU/plg_bespokesearch/archive/v1.0.1.zip</downloadurl>
+        </downloads>
+        <targetplatform name="joomla" />
+        <tags>
+            <tag>stable</tag>
+        </tags>
+    </update>
 </updates>
