@@ -224,7 +224,7 @@ class plgFinderBespokeSearch extends FinderIndexerAdapter
      *
      * @since   2.5
      */
-    protected function utf8_convert($text)
+    /*protected function utf8_convert($text)
     {
         if (!is_string($text)) {
             trigger_error('Function \'utf8_convert\' expects argument 1 to be a string', E_USER_ERROR);
@@ -240,5 +240,5 @@ class plgFinderBespokeSearch extends FinderIndexerAdapter
         // Decode two byte unicode characters
         $text = preg_replace("/([\300-\337])([\200-\277])/e", "'&#'.((ord('\\1')-192)*64+(ord('\\2')-128)).';'", $text);
         return $text;
-    }
+    }*/
 }
