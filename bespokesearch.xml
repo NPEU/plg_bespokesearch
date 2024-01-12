@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="plugin" group="finder" version="3.2.0" method="upgrade">
+<extension type="plugin" group="finder" method="upgrade">
 
     <name>PLG_FINDER_BESPOKESEARCH</name>
     <author>Andy Kirk</author>
     <authorEmail>andy.kirk@npeu.ox.ac.uk</authorEmail>
     <authorUrl>https://www.npeu.ox.ac.uk</authorUrl>
-    <creationDate>June 2019</creationDate>
-    <copyright>(C) NPEU 2019</copyright>
+    <creationDate>January 2024</creationDate>
+    <copyright>(C) NPEU 2024</copyright>
     <license>MIT License; see LICENSE.md</license>
 
     <!--  The version string is recorded in the components table -->
-    <version>1.0.1</version>
+    <version>2.0.0</version>
     <!-- The description is optional and defaults to the name -->
     <description>PLG_FINDER_BESPOKESEARCH_XML_DESCRIPTION</description>
 
     <updateservers>
         <!-- Note: No spaces or linebreaks allowed between the server tags -->
-        <server type="extension" name="NPEU: plg_bespokesearch Update Site">https://raw.githubusercontent.com/NPEU/plg_bespokesearch/master/update-manifest.xml</server>
+        <server type="extension" name="NPEU: plg_bespokesearch Update Site">https://raw.githubusercontent.com/NPEU/plg_bespokesearch/main/update-manifest.xml</server>
     </updateservers>
-    
+
+    <namespace path="src">NPEU\Plugin\Finder\BespokeSearch</namespace>
     <files>
-        <filename plugin="bespokesearch">bespokesearch.php</filename>
-        <filename>index.html</filename>
+        <folder>services</folder>
+        <folder plugin="bespokesearch">src</folder>
         <folder>language</folder>
     </files>
 
