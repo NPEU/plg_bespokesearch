@@ -280,23 +280,4 @@ final class BespokeSearch extends Adapter
     {
         return true;
     }
-
-    /**
-     * Method to get the query clause for getting items to update by time.
-     *
-     * @param   string  $time  The modified timestamp.
-     *
-     * @return  DatabaseQuery  A database object.
-     *
-     * @since   2.5
-     */
-    protected function getUpdateQueryByTime($time)
-    {
-        // Build an SQL query based on the modified time.
-        $db    = $this->getDatabase();
-        $query = $db->getQuery(true)
-            ->where('a.date >= ' . $db->quote($time));
-
-        return $query;
-    }
 }
