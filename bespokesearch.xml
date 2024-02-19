@@ -21,9 +21,9 @@
 
     <namespace path="src">NPEU\Plugin\Finder\BespokeSearch</namespace>
     <files>
-        <folder>services</folder>
         <folder plugin="bespokesearch">src</folder>
         <folder>language</folder>
+        <folder>services</folder>
     </files>
 
 </extension>
